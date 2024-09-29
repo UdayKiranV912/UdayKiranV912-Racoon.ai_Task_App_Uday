@@ -1,0 +1,30 @@
+{
+  "name": "tasksync",
+  "module": "src/server.ts",
+  "scripts": {
+    "dev": "npx nodemon",
+    "start": "bun run build && bun run build/server.js",
+    "build": "rimraf ./build && tsc",
+    "vercel-build": "echo building"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "latest",
+    "@types/bun": "latest",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/jsonwebtoken": "latest",
+    "rimraf": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "bcrypt": "latest",
+    "jackspeak": "2.1.1",
+    "string-width": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "mongoose": "latest"
+  }
+}
